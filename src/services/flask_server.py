@@ -4,8 +4,11 @@ import json
 import threading
 import joblib
 import paho.mqtt.client as mqtt
+from flask_cors import CORS
+
 
 app = Flask(__name__)
+CORS(app)
 DATA_PATH = "data/external/latest_data.json" 
 
 
